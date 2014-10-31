@@ -1,0 +1,20 @@
+<h1>Propose a New Project</h1>
+
+<%= form_for @project do |form| %>
+	<p>
+		<%= form.label :title %>
+		<%= form.text_field :title %>
+	</p>
+	<p>
+		<%= form.label :client %>
+		<%= form.text_area :client %>
+	</p>
+	<p>
+		<%= form.label :abstract %>
+		<%= form.text_area :abstract %>
+	</p>
+	<p>
+		<%= form.submit "Submit your Proposalt" %>
+	</p>
+
+<% end %>

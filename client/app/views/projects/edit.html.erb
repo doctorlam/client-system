@@ -1,0 +1,19 @@
+<h1>Edit Project</h1>
+
+<%= form_for @project do |form| %>
+<p>
+	<%= form.label :title %>< br />
+	<%= form.text_field :title %>
+</p>
+<p>
+	<%= form.label :client %>< br />
+	<%= form.text_area :client %>
+</p>
+<p>
+	<%= form.label :abstract %>< br />
+	<%= form.text_area :abstract %>
+</p>
+<p> 
+	<%= form.submit "Update Project"%>
+</p>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Projects</h1>
+<p><%= link_to "Propose a new projectt", new_project_path %>
+<% @projects.each do |project| %>
+	<h2><%= project.title %></h2>
+	<h3><%= project.client %></h3>
+	<p><%= project.abstract %></p>
+	<p><%= link_to "Edit", edit_project_path(project) %></p>
+	<p><%= link_to "Delete", project, :confirm => "Are you sure?", :method => :delete %></p>
+	<hr />
+<% end %>
